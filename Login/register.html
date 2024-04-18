@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course | Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .foralldiv {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 4.5rem;
+        }
+        
+        .gifonly {
+            margin-top: -1rem;
+            margin-right: 5rem;
+        }
+        
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            /* max-width: 20%; */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3rem;
+        }
+        
+        .usrcls {
+            margin-top: 1.5rem;
+        }
+        
+        .passcls {
+            margin-top: 1.5rem;
+        }
+        
+        .loginbtn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .regcls {
+            margin-top: .7rem;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="foralldiv">
+
+        <div class="inputs">
+            <h3 style="text-align: center;">Register</h3>
+            <div>
+                <form>
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="loginbtn">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Register
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <small class="regcls">Already having account ? <a href="login.html">Login</a></small>
+        </div>
+
+        <div class="gifonly">
+            <img src="../login_gif.gif" width="500" height="500">
+        </div>
+    </div>
+</body>
+
+</html>

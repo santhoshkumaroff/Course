@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Content</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- <link href="#" rel="icon"> -->
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <style>
+        body {
+            background-color: #f7f7f7;
+        }
+        
+        .head {
+            margin-top: 5rem;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .footerclass {
+            text-align: center;
+            background-color: #ecebff;
+            padding: 1rem;
+        }
+        
+        #button-addon1 {
+            color: #000000;
+        }
+        
+        i {
+            color: #1bb1dc;
+        }
+        
+        .form-control::placeholder {
+            font-size: 0.95rem;
+            color: #aaa;
+            font-style: italic;
+        }
+        
+        .form-control.shadow-0:focus {
+            box-shadow: none;
+        }
+        
+        .bgcolors {
+            background-color: rgb(255, 255, 255);
+            margin-top: 5rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            border-radius: .4rem;
+            width: 60%;
+            padding: 1.5rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+        .bgcolors1 {
+            background-color: rgb(255, 255, 255);
+            margin-top: -1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            border-radius: .4rem;
+            width: 80%;
+            height: 100%;
+            padding: 1.5rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+        .bgcolors12 {
+            background-color: rgb(255, 255, 255);
+            margin-top: -1rem;
+            margin-left: -.7rem;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            border-radius: .4rem;
+            width: 40%;
+            height: 100%;
+            padding: 1.5rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+        .bgcolors3 {
+            background-color: rgb(255, 255, 255);
+            margin-top: 5rem;
+            margin-left: -1rem;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+            border-radius: .4rem;
+            width: 30%;
+            height: 30%;
+            padding: 1.5rem;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .ratings {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .costbooking {
+            display: flex;
+        }
+        
+        .ratrev {
+            display: flex;
+        }
+        
+        .enroll {
+            background-color: #1bb1dc;
+            color: rgb(255, 255, 255);
+            padding: .3rem;
+            border-radius: .2rem;
+        }
+        
+        .enroll:hover {
+            color: cornsilk;
+        }
+        
+        .userimg {
+            border-radius: 50%;
+        }
+        
+        .crs_sl .course_contents {
+            margin-bottom: 30px
+        }
+        
+        .crs_sl .course_contents p.title {
+            font-size: 20px;
+            color: #0A0A0A;
+            line-height: 1.2;
+            font-weight: 500;
+            margin-bottom: 20px
+        }
+        
+        .crs_sl .course_contents p.title .vds_no {
+            float: right;
+            font-size: 15px;
+            font-weight: lighter;
+            color: #555555;
+            text-decoration: none
+        }
+        /*============================= Panels ===================================*/
+        
+        .course_contents .panel {
+            padding: 0;
+        }
+        
+        .course_contents .panel .panel-title {
+            padding: 10px 20px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 100;
+            color: #0A0A0A;
+            background-color: #EDEFF7;
+            width: 100%;
+            height: 50px;
+            line-height: 1.7;
+            border-radius: 5px;
+            text-align: left;
+            text-decoration: none;
+            border: none
+        }
+        
+        .course_contents .panel button.panel-title:focus {
+            outline: 0
+        }
+        
+        .course_contents .panel .collapsible:after {
+            content: "\f107";
+            float: right;
+            margin-top: 5px;
+            font-size: 10px;
+            font-weight: 900;
+        }
+        
+        .course_contents .panel .active:after {
+            content: "\f106";
+        }
+        
+        .course_contents .panel .panel-body {
+            display: none;
+        }
+        
+        .course_contents .panel .panel-body .vedio-details {
+            border-bottom: 1px solid #eeeeee;
+            padding: 20px 25px;
+        }
+        
+        .course_contents .panel .panel-body .vedio-details img.logo {
+            width: 18px;
+            height: 20px;
+            margin-top: -3px;
+            margin-right: 5px;
+        }
+        
+        .course_contents .panel .panel-body .vedio-details span {
+            font-size: 16px;
+            color: #4F4F4F;
+            transition: all 0.3s ease;
+        }
+        
+        .course_contents .panel .panel-body .vedio-details span.flt_rt {
+            float: right
+        }
+        
+        .course_contents .panel .panel-body .vedio-details .flt_rt span.vedio-length {
+            margin-left: 50px
+        }
+        
+        .course_contents .panel .panel-body .vedio-details:hover,
+        .course_contents .panel .panel-body .vedio-details:hover span {
+            color: #1bb1dc;
+            transition: all 0.3s ease;
+        }
+        
+        .secondimg {
+            width: 100%;
+        }
+        
+        .heading {
+            font-size: 25px;
+            margin-right: 25px;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        /* Three column layout */
+        
+        .side {
+            float: left;
+            width: 15%;
+            margin-top: 10px;
+        }
+        
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+        /* Place text to the right */
+        
+        .right {
+            text-align: right;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* The bar container */
+        
+        .bar-container {
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+        }
+        /* Individual bars */
+        
+        .bar-5 {
+            width: 60%;
+            height: 18px;
+            background-color: #04AA6D;
+        }
+        
+        .bar-4 {
+            width: 30%;
+            height: 18px;
+            background-color: #2196F3;
+        }
+        
+        .bar-3 {
+            width: 10%;
+            height: 18px;
+            background-color: #00bcd4;
+        }
+        
+        .bar-2 {
+            width: 4%;
+            height: 18px;
+            background-color: #ff9800;
+        }
+        
+        .bar-1 {
+            width: 15%;
+            height: 18px;
+            background-color: #f44336;
+        }
+        /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+        
+        @media (max-width: 400px) {
+            .side,
+            .middle {
+                width: 100%;
+            }
+            .right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" style="background-color: #fff;">
+        <div class="container">
+            <div class="logo float-left">
+                <h1 class="text-light"><a href="index.html" class="scrollto"><span>Course</span></a></h1>
+            </div>
+
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="drop-down"><a href="user-courses.html">Courses</a>
+                        <ul>
+                            <li class="drop-down"><a href="#">Course - 1</a>
+                                <ul>
+                                    <li class="drop-down"><a href="#">TNPSC</a>
+                                        <ul>
+                                            <li><a href="#">Group 1</a></li>
+                                            <li><a href="#">Group 2</a></li>
+                                            <li><a href="#">Group 3</a></li>
+                                            <li><a href="#">Group 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down"><a href="#">JEE</a>
+                                        <ul>
+                                            <li><a href="#">Main</a></li>
+                                            <li><a href="#">Advance</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">NEET</a></li>
+                                    <li><a href="#">UPSC</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-down"><a href="#">Course - 2</a>
+                                <ul>
+                                    <li class="drop-down"><a href="#">TNPSC</a>
+                                        <ul>
+                                            <li><a href="#">Group 1</a></li>
+                                            <li><a href="#">Group 2</a></li>
+                                            <li><a href="#">Group 3</a></li>
+                                            <li><a href="#">Group 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">JEE</a></li>
+                                    <li><a href="#">UPSC</a></li>
+                                </ul>
+                            </li>
+                            <li class="drop-down"><a href="#">Course - 3</a>
+                                <ul>
+                                    <li class="drop-down"><a href="#">TNPSC</a>
+                                        <ul>
+                                            <li><a href="#">Group 1</a></li>
+                                            <li><a href="#">Group 2</a></li>
+                                            <li><a href="#">Group 3</a></li>
+                                            <li><a href="#">Group 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-down"><a href="#">JEE</a>
+                                        <ul>
+                                            <li><a href="#">Main</a></li>
+                                            <li><a href="#">Advance</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">UPSC</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Course - 4</a></li>
+                            <li><a href="#">Course - 5</a></li>
+                            <li><a href="#">Course - 6</a></li>
+                            <!-- <li><a href="#">Course - 7</a></li>
+                            <li><a href="#">Course - 8</a></li>
+                            <li><a href="#">Course - 9</a></li>
+                            <li><a href="#">Course - 10</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="institution.html">Institutes</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Login/login.html">Login</a></li>
+
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="d-flex">
+        <div class="bgcolors">
+            <div>
+                <video controls style="width: 100%;">
+                    <source src="mov_bbb.mp4" type="video/mp4" style="width: 100%;">
+                </video>
+            </div>
+            <div class="ratings">
+                <div class="ratrev">
+                    <div>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> &nbsp;|&nbsp;
+                    </div>
+                    <div>
+                        <p>1420 Reviews</p>
+                    </div>
+                </div>
+                <div class="costbooking">
+                    <div>
+                        <p style="color: #1bb1dc; font-weight: 600;">₹ 12,000 </p>
+                    </div> &nbsp;|&nbsp;
+                    <div>
+                        <a href="#" class="enroll">Enroll Course</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Web Development Course for Beginners</h3>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <img src="usr_img.png" width="40" height="40" class="userimg"> &nbsp;
+                    <small style="font-size: 1rem; font-weight: 500;"> By : Rohit Sharma
+                </small>
+                </div>
+
+                <div>
+                    <p>Share : <i class="fab fa-facebook" style="cursor: pointer;"></i>&nbsp;&nbsp;<i class="fab fa-instagram" style="cursor: pointer;"></i>&nbsp;&nbsp;<i class="fab fa-twitter" style="cursor: pointer;"></i>&nbsp;&nbsp;<i class="fab fa-youtube"
+                            style="cursor: pointer;"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bgcolors3">
+            <div>
+                <img src="wd_img.jpg" class="secondimg">
+            </div>
+            <div class="d-flex justify-content-between" style="margin-top: 1rem; padding: .5rem;">
+                <p style="font-weight: 600;">Duration : </p>
+                <p>3 Hours</p>
+            </div>
+            <div class="d-flex justify-content-between" style="margin-top: -1.3rem; padding: .5rem;">
+                <p style="font-weight: 600;">Videos : </p>
+                <p>25</p>
+            </div>
+            <div class="d-flex justify-content-between" style="margin-top: -1.3rem; padding: .5rem;">
+                <p style="font-weight: 600;">Skill level : </p>
+                <p>Beginner</p>
+            </div>
+            <div class="d-flex justify-content-between" style="margin-top: -1.3rem; padding: .5rem;">
+                <p style="font-weight: 600;">Quizzers : </p>
+                <p>25</p>
+            </div>
+            <div class="d-flex justify-content-between" style="margin-top: -1.3rem; padding: .5rem;">
+                <p style="font-weight: 600;">Certificate : </p>
+                <p>Yes</p>
+            </div>
+            <div class="d-flex" style="flex-direction: column;">
+                <button class="btn btn-primary" style="background-color: #1bb1dc;"><i class="fas fa-cart-plus" style="color: white;"></i> Add to cart</button>
+                <button class="btn btn-primary" style="margin-top: 1rem; background-color: #1bb1dc;"><i class="fas fa-check-circle" style="color: white;"></i> Enroll Course</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ALL CONTENTS (TWO) -->
+
+    <div class="d-flex justify-content-between">
+        <div class="bgcolors1">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Overview</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Content</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Review</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation eyee. ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolorrepr ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat yeef cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                    iste natus error sit voluptatem
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="course_contents">
+                        <p class="title" style="display: flex; justify-content: space-between;">Course Content
+                            <span class="vds_no">8&nbsp;Lectures&emsp;Duration&nbsp;02:11:30</span>
+                        </p>
+                        <!------------Panel---------------------------->
+                        <div class="panel">
+                            <button type="button" class="fas panel-title collapsible">Getting Started</button>
+                            <!------------Panel Body------------------->
+                            <div class="panel-body">
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">1. Introduction to the Course</span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">02:53</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------Panel---------------------------->
+                        <div class="panel">
+                            <button type="button" class="fas panel-title collapsible">Brief</button>
+                            <!------------Panel Body------------------->
+                            <div class="panel-body">
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">2. Your first design challenge </span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">12:53</span></span>
+                                </div>
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">3. How to solve the previous exercise </span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">24:01</span></span>
+                                </div>
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">4. Find out why smart objects are amazing </span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">30:02</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------Panel---------------------------->
+                        <div class="panel">
+                            <button type="button" class="fas panel-title collapsible">The Conclusion</button>
+                            <!------------Panel Body------------------->
+                            <div class="panel-body">
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">5. Title of the vedio given from institution side</span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">02:53</span></span>
+                                </div>
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">6. Title of the vedio given from institution side</span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">02:53</span></span>
+                                </div>
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">7. Title of the vedio given from institution side</span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">02:53</span></span>
+                                </div>
+                                <div class="vedio-details">
+                                    <img class="logo" src="usr_img.png">
+                                    <span class="vedio-title">8. Title of the vedio given from institution side</span>
+                                    <span class="flt_rt">Preview<span class="vedio-length">02:53</span></span>
+                                </div>
+                            </div>
+                            <!------------/ Panel Body /-------------------->
+                        </div>
+                        <!------------/ Panel /--------------------------->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <span class="heading">User Rating</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>4.1 average based on 254 reviews.</p>
+                    <hr style="border:3px solid #f1f1f1">
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <img src="usr_img.png" width="40" height="40" style="border-radius: 50%;">
+                            <small style="margin-top: .5rem; font-size: 1rem;"> &nbsp;User</small>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <p style="margin-top: .5rem;">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <img src="usr_img.png" width="40" height="40" style="border-radius: 50%;">
+                            <small style="margin-top: .5rem; font-size: 1rem;"> &nbsp;User</small>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <p style="margin-top: .5rem;">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <img src="usr_img.png" width="40" height="40" style="border-radius: 50%;">
+                            <small style="margin-top: .5rem; font-size: 1rem;"> &nbsp;User</small>
+                        </div>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <p style="margin-top: .5rem;">Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bgcolors12">
+            <h4>Related Courses</h4>
+
+            <div class="d-flex">
+                <div>
+                    <img src="bg_img.jpg" width="70" height="70" style="object-fit: cover; border-radius: .2rem;">
+                </div>
+                <div style="margin-left: 1rem;">
+                    <p style="font-weight: 600;">Web Development for Begineers</p>
+                    <p style="color: #1bb1dc; margin-top: -1.7rem;"> ₹ 12,000 </p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div>
+                    <img src="bg_img.jpg" width="70" height="70" style="object-fit: cover; border-radius: .2rem;">
+                </div>
+                <div style="margin-left: 1rem;">
+                    <p style="font-weight: 600;">Web Development for Begineers</p>
+                    <p style="color: #1bb1dc; margin-top: -1.7rem;"> ₹ 12,000 </p>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div>
+                    <img src="bg_img.jpg" width="70" height="70" style="object-fit: cover; border-radius: .2rem;">
+                </div>
+                <div style="margin-left: 1rem;">
+                    <p style="font-weight: 600;">Web Development for Begineers</p>
+                    <p style="color: #1bb1dc; margin-top: -1.7rem;"> ₹ 12,000 </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- #call-to-action -->
+    <!--==========================
+    Footer
+  ============================-->
+
+    <div class="wow fadeInUp">
+        <!-- Footer -->
+        <footer style="background-color: #ecebff;">
+            <div class="container py-1">
+                <div class="row py-4">
+                    <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
+                        <!-- <img src="img/logo.png" alt="" width="180" class="mb-3"> -->
+                        <h3>Address</h3>
+                        <p class="font-italic text-muted">Vellore<br> 600008. </p>
+                        <ul class="list-inline mt-4" style="font-size: 20px;">
+                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Quick Links</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-muted">Home</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Courses</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Institutes</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Courses</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-muted">NEET</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">TNPSC</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">JEE</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">UPSC</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">SSC</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Ask Quries</h6>
+                        <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                        <div class="p-1 rounded border">
+                            <div class="input-group">
+                                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                                <div class="input-group-append">
+                                    <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footerclass wow fadeInUp">
+                <div class="copyright">
+                    2021 &copy; Copyright <strong>Course</strong>. All Rights Reserved
+                </div>
+            </div>
+    </div>
+
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+</body>
+
+</html>
